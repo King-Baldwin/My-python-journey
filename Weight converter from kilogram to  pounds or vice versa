@@ -1,0 +1,12 @@
+weight = float(input("What is your weight : "))
+unit = input("What is the unit K or L : ")
+
+if unit=="K":
+    weight = weight * 2.205
+    print(f"Your weight is {round(weight, 1)} lbs")
+elif unit=="L":
+    weight = weight / 2.205
+    print(f"Your weight is {round(weight, 1)} kgs")
+else :
+    print(f"{unit} is invalid")
+    
