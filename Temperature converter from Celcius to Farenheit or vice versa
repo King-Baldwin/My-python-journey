@@ -1,0 +1,11 @@
+unit = input("Is the temperature in Farenheit or Celcius (F/C) : ")
+temp = float(input("Enter the temperature : "))
+if unit == "C":
+    temp = (9 * temp)/5 +32
+    print(f"Tempearture is in Farenheit is {temp}")
+elif unit == "F":
+    temp=(temp-32)*9/5
+    print(f"Tempearture is in Celcius is {temp}")
+else :
+    print(f"{unit} is incorrect data") 
+    
