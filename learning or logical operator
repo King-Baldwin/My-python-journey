@@ -1,0 +1,7 @@
+temp = float(input("What is the temperature outside : "))
+is_raining = False
+if temp > 35 or temp < 0 or is_raining:
+    print("The event is cancelled")
+else :
+    print("The even is still on the schedule")
+    
