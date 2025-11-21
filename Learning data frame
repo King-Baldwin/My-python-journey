@@ -1,0 +1,17 @@
+import pandas as pd
+data = {
+    "Name" :["Abdulla", "Sherzod", "Shaxrizoda"],
+    "Age" : [ 29, 25, 21]
+}
+dataframe= pd.DataFrame(data, index = [1, 2, 3])
+# Add a new column
+dataframe["Job"]=["Spy", "Chef", "My ex"]
+
+# add a new row 
+new_rows = pd.DataFrame ([{"Name" : "Muxlisa", "Age" : 25, "Job" : "Teacher" },
+{"Name" : "Shuxrat", "Age" : 20, "Job" : "Somsachi" }      ],
+ 
+ 
+ index= [4, 5])
+dataframe= pd.concat([dataframe, new_rows])
+print(dataframe)
